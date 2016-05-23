@@ -1,0 +1,247 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\NetDebugHelper.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\NetDebugHelper.ico"
+IDI_ICON1               ICON    DISCARDABLE     "res\\chinaz6.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 258, 81
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 NetDebugHelper"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "NetDebugHelper 2.0 版",IDC_STATIC,40,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2015",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,201,7,50,14,WS_GROUP
+    LTEXT           "作者：赵伟",IDC_STATIC,40,41,41,8
+    LTEXT           "日期：2015年5月9日",IDC_STATIC,39,59,73,8
+    LTEXT           "Thanks for wyg's help.^_^",IDC_STATIC,121,59,113,8
+END
+
+IDD_NETDEBUGHELPER_DIALOG DIALOGEX 0, 0, 405, 309
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "网络调试助手"
+FONT 14, "宋体", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT1,192,47,28,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "监听端口:",IDC_STATIC,147,48,39,8
+    PUSHBUTTON      "开始监听",IDC_BUTTON1,250,16,47,12
+    EDITTEXT        IDC_EDIT2,16,127,309,62,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_AUTOHSCROLL | WS_VSCROLL
+    EDITTEXT        IDC_EDIT3,18,213,307,62,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_AUTOHSCROLL | WS_VSCROLL
+    PUSHBUTTON      "发送",IDC_BUTTON3,282,283,40,12
+    LTEXT           "接收窗口：",IDC_STATIC,14,89,41,11
+    LTEXT           "发送窗口：",IDC_STATIC,18,196,41,8
+    CONTROL         "IPAddress1",IDC_IPADDRESS1,"SysIPAddress32",WS_TABSTOP,
+                    57,48,80,13
+    LTEXT           "IP地址:",IDC_STATIC,15,51,34,10
+    CONTROL         "TCP服务器",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON,17,29,
+                    56,8
+    CONTROL         "TCP客户端",IDC_RADIO4,"Button",BS_AUTORADIOBUTTON,75,28,
+                    46,8
+    CONTROL         "UDP服务器",IDC_RADIO5,"Button",BS_AUTORADIOBUTTON,129,
+                    28,47,8
+    CONTROL         "UDP客户端",IDC_RADIO6,"Button",BS_AUTORADIOBUTTON,192,
+                    28,49,8
+    PUSHBUTTON      "连接到服务器",IDC_BUTTON4,250,59,49,12
+    PUSHBUTTON      "停止监听",IDC_BUTTON5,250,36,48,12
+    PUSHBUTTON      "断开服务器",IDC_BUTTON6,250,81,51,12
+    LTEXT           "欢迎使用网络调试助手",IDC_STATIC,115,6,77,8
+    PUSHBUTTON      "清空接收窗口",IDC_BUTTON2,127,109,50,14
+    PUSHBUTTON      "清空发送窗口",IDC_BUTTON7,125,194,50,14
+    LTEXT           "当前状态：空闲",IDC_STATICSTATE,16,280,172,14
+    LTEXT           "CTRL+Enter 输入回车",IDC_STATIC,207,197,77,10
+    CONTROL         "16进制",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON,30,113,
+                    39,10
+    CONTROL         "Ascii码",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,250,112,
+                    44,10
+    EDITTEXT        IDC_EDIT4,341,221,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    PUSHBUTTON      "定时发送",IDC_BUTTON8,340,201,50,14
+    LTEXT           "ms",IDC_STATIC,382,224,9,8
+    PUSHBUTTON      "加载文件",IDC_BUTTON9,339,245,50,14
+    LTEXT           "接收字节数",IDC_STATICREC,333,131,58,22
+    LTEXT           "发送字节数",IDC_STATICSND,333,267,58,16
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "NetDebugHelper Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "NetDebugHelper\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2015\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "NetDebugHelper.EXE\0"
+            VALUE "ProductName", "NetDebugHelper 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 251
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 74
+    END
+
+    IDD_NETDEBUGHELPER_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 398
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 302
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 NetDebugHelper(&A)..."
+    IDP_SOCKETS_INIT_FAILED "Windows 通信端口初始化失败。"
+END
+
+#endif    // Chinese (中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\NetDebugHelper.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
